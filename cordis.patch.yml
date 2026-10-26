@@ -1,0 +1,4 @@
+# dsh-run-sessions：只插入本插件入口，不改动任何官方插件。
+- insert:
+    - id: dsh-run-sessions
+      name: 'dsh-run-sessions'

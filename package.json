@@ -1,0 +1,42 @@
+{
+  "name": "dsh-run-sessions",
+  "version": "0.2.0",
+  "description": "本次启动：在侧栏「任务 / 频道」旁加一个页签，列出本次启动 DSH 以来聊过的会话；支持选中高亮、右键移除、拖拽排序。A \"this run\" tab next to Tasks / Channels listing sessions touched since DSH launched, with highlight, context menu and drag-to-reorder.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "sidebar",
+    "session",
+    "recent"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayachinene285/dsh-run-sessions.git"
+  },
+  "homepage": "https://github.com/ayachinene285/dsh-run-sessions#readme",
+  "bugs": {
+    "url": "https://github.com/ayachinene285/dsh-run-sessions/issues"
+  }
+}
